@@ -1,0 +1,22 @@
+//
+//  TILVBDemo.pch
+//  TILVBDemo
+//
+//  Created by zyjk_iMac-penghe on 2017/11/24.
+//  Copyright © 2017年 zyjk_iMac-penghe. All rights reserved.
+//
+
+#ifndef TILVBDemo_pch
+#define TILVBDemo_pch
+
+
+#define kILVBHost @"https://sxb.qcloud.com/sxb_dev/index.php?"
+
+// 日志输出宏定义
+#ifdef DEBUG
+#define CLog( s, ... ) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String] );
+#else
+#define CLog( s, ... )
+#endif
+
+#endif /* TILVBDemo_pch */

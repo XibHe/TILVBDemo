@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0E822E1FC7D06F002EC856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B0E822D1FC7D06F002EC856 /* Assets.xcassets */; };
+		3B0E82311FC7D06F002EC856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0E822F1FC7D06F002EC856 /* LaunchScreen.storyboard */; };
+		3B0E82341FC7D06F002EC856 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82331FC7D06F002EC856 /* main.m */; };
+		3B0E823E1FC7D06F002EC856 /* TILVBDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E823D1FC7D06F002EC856 /* TILVBDemoTests.m */; };
+		3B0E82491FC7D070002EC856 /* TILVBDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82481FC7D070002EC856 /* TILVBDemoUITests.m */; };
+		3B0E825A1FC808FD002EC856 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82591FC808FD002EC856 /* AppDelegate.m */; };
+		3B0E82611FC80B1F002EC856 /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82601FC80B1F002EC856 /* RegistViewController.m */; };
+		3B0E82641FC80B3E002EC856 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82631FC80B3E002EC856 /* LoginViewController.m */; };
+		3B0E82711FC81C84002EC856 /* TILVBRequestServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82701FC81C84002EC856 /* TILVBRequestServer.m */; };
+		3B0E82741FC81F96002EC856 /* TILVBRequestServer+RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82731FC81F96002EC856 /* TILVBRequestServer+RequestManager.m */; };
+		68001A27BAE74A7360A2F29A /* libPods-TILVBDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B0E823A1FC7D06F002EC856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B0E82191FC7D06F002EC856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B0E82201FC7D06F002EC856;
+			remoteInfo = TILVBDemo;
+		};
+		3B0E82451FC7D06F002EC856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B0E82191FC7D06F002EC856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B0E82201FC7D06F002EC856;
+			remoteInfo = TILVBDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018B9F5A18C8B8CC563ADE15 /* Pods-TILVBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TILVBDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TILVBDemo/Pods-TILVBDemo.release.xcconfig"; sourceTree = "<group>"; };
+		304BD778ED04B9418ED15E8E /* Pods-TILVBDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TILVBDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TILVBDemo/Pods-TILVBDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3B0E82211FC7D06F002EC856 /* TILVBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TILVBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0E822D1FC7D06F002EC856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B0E82301FC7D06F002EC856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B0E82321FC7D06F002EC856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0E82331FC7D06F002EC856 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B0E82391FC7D06F002EC856 /* TILVBDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TILVBDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0E823D1FC7D06F002EC856 /* TILVBDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TILVBDemoTests.m; sourceTree = "<group>"; };
+		3B0E823F1FC7D06F002EC856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0E82441FC7D06F002EC856 /* TILVBDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TILVBDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B0E82481FC7D070002EC856 /* TILVBDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TILVBDemoUITests.m; sourceTree = "<group>"; };
+		3B0E824A1FC7D070002EC856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0E82561FC7F4B6002EC856 /* TILVBDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TILVBDemo.pch; sourceTree = "<group>"; };
+		3B0E82581FC808FD002EC856 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B0E82591FC808FD002EC856 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B0E825F1FC80B1F002EC856 /* RegistViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		3B0E82601FC80B1F002EC856 /* RegistViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		3B0E82621FC80B3E002EC856 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3B0E82631FC80B3E002EC856 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3B0E826F1FC81C84002EC856 /* TILVBRequestServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TILVBRequestServer.h; sourceTree = "<group>"; };
+		3B0E82701FC81C84002EC856 /* TILVBRequestServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TILVBRequestServer.m; sourceTree = "<group>"; };
+		3B0E82721FC81F96002EC856 /* TILVBRequestServer+RequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TILVBRequestServer+RequestManager.h"; sourceTree = "<group>"; };
+		3B0E82731FC81F96002EC856 /* TILVBRequestServer+RequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TILVBRequestServer+RequestManager.m"; sourceTree = "<group>"; };
+		9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TILVBDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B0E821E1FC7D06F002EC856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68001A27BAE74A7360A2F29A /* libPods-TILVBDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0E82361FC7D06F002EC856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0E82411FC7D06F002EC856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B0E82181FC7D06F002EC856 = {
+			isa = PBXGroup;
+			children = (
+				3B0E82231FC7D06F002EC856 /* TILVBDemo */,
+				3B0E823C1FC7D06F002EC856 /* TILVBDemoTests */,
+				3B0E82471FC7D06F002EC856 /* TILVBDemoUITests */,
+				3B0E82221FC7D06F002EC856 /* Products */,
+				CE9F3D495729F054BE2703D6 /* Pods */,
+				E7A308429F335BE112993F96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B0E82221FC7D06F002EC856 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E82211FC7D06F002EC856 /* TILVBDemo.app */,
+				3B0E82391FC7D06F002EC856 /* TILVBDemoTests.xctest */,
+				3B0E82441FC7D06F002EC856 /* TILVBDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B0E82231FC7D06F002EC856 /* TILVBDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E82651FC810EF002EC856 /* Base */,
+				3B0E82571FC808FD002EC856 /* AppDelegate */,
+				3B0E825B1FC8095C002EC856 /* Main */,
+				3B0E825D1FC80977002EC856 /* Models */,
+				3B0E825E1FC80983002EC856 /* Views */,
+				3B0E825C1FC8096C002EC856 /* Controllers */,
+				3B0E822D1FC7D06F002EC856 /* Assets.xcassets */,
+				3B0E822F1FC7D06F002EC856 /* LaunchScreen.storyboard */,
+				3B0E82321FC7D06F002EC856 /* Info.plist */,
+				3B0E82331FC7D06F002EC856 /* main.m */,
+				3B0E82561FC7F4B6002EC856 /* TILVBDemo.pch */,
+			);
+			path = TILVBDemo;
+			sourceTree = "<group>";
+		};
+		3B0E823C1FC7D06F002EC856 /* TILVBDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E823D1FC7D06F002EC856 /* TILVBDemoTests.m */,
+				3B0E823F1FC7D06F002EC856 /* Info.plist */,
+			);
+			path = TILVBDemoTests;
+			sourceTree = "<group>";
+		};
+		3B0E82471FC7D06F002EC856 /* TILVBDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E82481FC7D070002EC856 /* TILVBDemoUITests.m */,
+				3B0E824A1FC7D070002EC856 /* Info.plist */,
+			);
+			path = TILVBDemoUITests;
+			sourceTree = "<group>";
+		};
+		3B0E82571FC808FD002EC856 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E82581FC808FD002EC856 /* AppDelegate.h */,
+				3B0E82591FC808FD002EC856 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3B0E825B1FC8095C002EC856 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E825F1FC80B1F002EC856 /* RegistViewController.h */,
+				3B0E82601FC80B1F002EC856 /* RegistViewController.m */,
+				3B0E82621FC80B3E002EC856 /* LoginViewController.h */,
+				3B0E82631FC80B3E002EC856 /* LoginViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3B0E825C1FC8096C002EC856 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3B0E825D1FC80977002EC856 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3B0E825E1FC80983002EC856 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3B0E82651FC810EF002EC856 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3B0E826F1FC81C84002EC856 /* TILVBRequestServer.h */,
+				3B0E82701FC81C84002EC856 /* TILVBRequestServer.m */,
+				3B0E82721FC81F96002EC856 /* TILVBRequestServer+RequestManager.h */,
+				3B0E82731FC81F96002EC856 /* TILVBRequestServer+RequestManager.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE9F3D495729F054BE2703D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				304BD778ED04B9418ED15E8E /* Pods-TILVBDemo.debug.xcconfig */,
+				018B9F5A18C8B8CC563ADE15 /* Pods-TILVBDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E7A308429F335BE112993F96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B0E82201FC7D06F002EC856 /* TILVBDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0E824D1FC7D070002EC856 /* Build configuration list for PBXNativeTarget "TILVBDemo" */;
+			buildPhases = (
+				76579F473802D60BB9D0BEEA /* [CP] Check Pods Manifest.lock */,
+				3B0E821D1FC7D06F002EC856 /* Sources */,
+				3B0E821E1FC7D06F002EC856 /* Frameworks */,
+				3B0E821F1FC7D06F002EC856 /* Resources */,
+				7A61D711930DF47583032E2F /* [CP] Embed Pods Frameworks */,
+				076AD773ACF0A17E8F11D2BA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TILVBDemo;
+			productName = TILVBDemo;
+			productReference = 3B0E82211FC7D06F002EC856 /* TILVBDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B0E82381FC7D06F002EC856 /* TILVBDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0E82501FC7D070002EC856 /* Build configuration list for PBXNativeTarget "TILVBDemoTests" */;
+			buildPhases = (
+				3B0E82351FC7D06F002EC856 /* Sources */,
+				3B0E82361FC7D06F002EC856 /* Frameworks */,
+				3B0E82371FC7D06F002EC856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B0E823B1FC7D06F002EC856 /* PBXTargetDependency */,
+			);
+			name = TILVBDemoTests;
+			productName = TILVBDemoTests;
+			productReference = 3B0E82391FC7D06F002EC856 /* TILVBDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B0E82431FC7D06F002EC856 /* TILVBDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B0E82531FC7D070002EC856 /* Build configuration list for PBXNativeTarget "TILVBDemoUITests" */;
+			buildPhases = (
+				3B0E82401FC7D06F002EC856 /* Sources */,
+				3B0E82411FC7D06F002EC856 /* Frameworks */,
+				3B0E82421FC7D06F002EC856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B0E82461FC7D06F002EC856 /* PBXTargetDependency */,
+			);
+			name = TILVBDemoUITests;
+			productName = TILVBDemoUITests;
+			productReference = 3B0E82441FC7D06F002EC856 /* TILVBDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B0E82191FC7D06F002EC856 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "zyjk_iMac-penghe";
+				TargetAttributes = {
+					3B0E82201FC7D06F002EC856 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					3B0E82381FC7D06F002EC856 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B0E82201FC7D06F002EC856;
+					};
+					3B0E82431FC7D06F002EC856 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3B0E82201FC7D06F002EC856;
+					};
+				};
+			};
+			buildConfigurationList = 3B0E821C1FC7D06F002EC856 /* Build configuration list for PBXProject "TILVBDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B0E82181FC7D06F002EC856;
+			productRefGroup = 3B0E82221FC7D06F002EC856 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B0E82201FC7D06F002EC856 /* TILVBDemo */,
+				3B0E82381FC7D06F002EC856 /* TILVBDemoTests */,
+				3B0E82431FC7D06F002EC856 /* TILVBDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B0E821F1FC7D06F002EC856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0E82311FC7D06F002EC856 /* LaunchScreen.storyboard in Resources */,
+				3B0E822E1FC7D06F002EC856 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0E82371FC7D06F002EC856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0E82421FC7D06F002EC856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		076AD773ACF0A17E8F11D2BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TILVBDemo/Pods-TILVBDemo-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TILVBDemo/Pods-TILVBDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76579F473802D60BB9D0BEEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TILVBDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A61D711930DF47583032E2F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TILVBDemo/Pods-TILVBDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B0E821D1FC7D06F002EC856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0E82641FC80B3E002EC856 /* LoginViewController.m in Sources */,
+				3B0E82711FC81C84002EC856 /* TILVBRequestServer.m in Sources */,
+				3B0E82741FC81F96002EC856 /* TILVBRequestServer+RequestManager.m in Sources */,
+				3B0E825A1FC808FD002EC856 /* AppDelegate.m in Sources */,
+				3B0E82341FC7D06F002EC856 /* main.m in Sources */,
+				3B0E82611FC80B1F002EC856 /* RegistViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0E82351FC7D06F002EC856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0E823E1FC7D06F002EC856 /* TILVBDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B0E82401FC7D06F002EC856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B0E82491FC7D070002EC856 /* TILVBDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B0E823B1FC7D06F002EC856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B0E82201FC7D06F002EC856 /* TILVBDemo */;
+			targetProxy = 3B0E823A1FC7D06F002EC856 /* PBXContainerItemProxy */;
+		};
+		3B0E82461FC7D06F002EC856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B0E82201FC7D06F002EC856 /* TILVBDemo */;
+			targetProxy = 3B0E82451FC7D06F002EC856 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B0E822F1FC7D06F002EC856 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B0E82301FC7D06F002EC856 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B0E824B1FC7D070002EC856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3B0E824C1FC7D070002EC856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B0E824E1FC7D070002EC856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 304BD778ED04B9418ED15E8E /* Pods-TILVBDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TILVBDemo/TILVBDemo.pch;
+				INFOPLIST_FILE = TILVBDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.TILVBDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B0E824F1FC7D070002EC856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018B9F5A18C8B8CC563ADE15 /* Pods-TILVBDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TILVBDemo/TILVBDemo.pch;
+				INFOPLIST_FILE = TILVBDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.TILVBDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B0E82511FC7D070002EC856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				INFOPLIST_FILE = TILVBDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.TILVBDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TILVBDemo.app/TILVBDemo";
+			};
+			name = Debug;
+		};
+		3B0E82521FC7D070002EC856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				INFOPLIST_FILE = TILVBDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.TILVBDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TILVBDemo.app/TILVBDemo";
+			};
+			name = Release;
+		};
+		3B0E82541FC7D070002EC856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				INFOPLIST_FILE = TILVBDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.TILVBDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TILVBDemo;
+			};
+			name = Debug;
+		};
+		3B0E82551FC7D070002EC856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				INFOPLIST_FILE = TILVBDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.TILVBDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TILVBDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B0E821C1FC7D06F002EC856 /* Build configuration list for PBXProject "TILVBDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0E824B1FC7D070002EC856 /* Debug */,
+				3B0E824C1FC7D070002EC856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B0E824D1FC7D070002EC856 /* Build configuration list for PBXNativeTarget "TILVBDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0E824E1FC7D070002EC856 /* Debug */,
+				3B0E824F1FC7D070002EC856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B0E82501FC7D070002EC856 /* Build configuration list for PBXNativeTarget "TILVBDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0E82511FC7D070002EC856 /* Debug */,
+				3B0E82521FC7D070002EC856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B0E82531FC7D070002EC856 /* Build configuration list for PBXNativeTarget "TILVBDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B0E82541FC7D070002EC856 /* Debug */,
+				3B0E82551FC7D070002EC856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B0E82191FC7D06F002EC856 /* Project object */;
+}
