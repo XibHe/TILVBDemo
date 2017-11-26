@@ -20,7 +20,7 @@ typedef void(^HttpFailureBlock)(NSError* error);
  *  @param url 这个是是否业务参数在content字典里面(登录 ，注册，修改密码 业务参数在param里面 传NO)
  
  *  @param success 这个是请求成功后回调的block
- *  @param failure 这个是请求失败的回调block
+ *  @param failue 这个是请求失败的回调block
  */
 + (void)postWithUrl:(NSString*)url params:(NSDictionary*)params  success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failue;
 @end

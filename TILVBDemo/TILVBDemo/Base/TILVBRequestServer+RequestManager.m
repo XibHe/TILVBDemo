@@ -12,7 +12,7 @@
 
 +(void)getRegistedWithParams:(NSDictionary*)params success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failure
 {
-    [self postWithUrl:[NSString stringWithFormat:@"%@svc=account&cmd=regist",kILVBHost] params:params success:^(id JSON) {
+    [self postWithUrl:[NSString stringWithFormat:@"%@",kILVBHost] params:params success:^(id JSON) {
         if(success){
             success(JSON);
         }
@@ -22,5 +22,4 @@
         }
     }];
 }
-
 @end

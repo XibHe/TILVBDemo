@@ -23,7 +23,7 @@
 
 - (void)registerRequest
 {
-    NSDictionary *params = @{@"id": @"s123456",
+    NSDictionary *params = @{@"id": @"a123456",
                              @"pwd": @"12345678"
                              };
     [TILVBRequestServer getRegistedWithParams:params success:^(id JSON) {
