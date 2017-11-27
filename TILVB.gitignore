@@ -1,0 +1,15 @@
+QAVSDK.framework
+
+IMCore.framework
+ImSDK.framework
+IMSDKBugly.framework
+QALSDK.framework
+TLSSDK.framework
+
+DecoRes.bundle
+FilterRes.bundle
+opencv2.framework
+PE.dat
+QAVEffect.framework
+QAVEffectRes.bundle
+
