@@ -17,6 +17,32 @@
 		3B0E82641FC80B3E002EC856 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82631FC80B3E002EC856 /* LoginViewController.m */; };
 		3B0E82711FC81C84002EC856 /* TILVBRequestServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82701FC81C84002EC856 /* TILVBRequestServer.m */; };
 		3B0E82741FC81F96002EC856 /* TILVBRequestServer+RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82731FC81F96002EC856 /* TILVBRequestServer+RequestManager.m */; };
+		3BCEA24F1FCBE08F00D0D8EB /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24E1FCBE08800D0D8EB /* VideoToolbox.framework */; };
+		3BCEA2501FCBE09200D0D8EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24D1FCBE07E00D0D8EB /* UIKit.framework */; };
+		3BCEA2511FCBE09400D0D8EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24C1FCBE07800D0D8EB /* SystemConfiguration.framework */; };
+		3BCEA2521FCBE09600D0D8EB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24B1FCBE07200D0D8EB /* QuartzCore.framework */; };
+		3BCEA2531FCBE09800D0D8EB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24A1FCBE06900D0D8EB /* OpenGLES.framework */; };
+		3BCEA2541FCBE09A00D0D8EB /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2491FCBE05E00D0D8EB /* OpenAL.framework */; };
+		3BCEA2551FCBE09C00D0D8EB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2481FCBE05400D0D8EB /* Accelerate.framework */; };
+		3BCEA2561FCBE09E00D0D8EB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2471FCBE04100D0D8EB /* AssetsLibrary.framework */; };
+		3BCEA2571FCBE0A000D0D8EB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2461FCBE03800D0D8EB /* AVFoundation.framework */; };
+		3BCEA2581FCBE0A300D0D8EB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2451FCBE03300D0D8EB /* AVKit.framework */; };
+		3BCEA2591FCBE0A500D0D8EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2441FCBE02C00D0D8EB /* CoreGraphics.framework */; };
+		3BCEA25A1FCBE0A800D0D8EB /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2431FCBE01C00D0D8EB /* CoreMedia.framework */; };
+		3BCEA25B1FCBE0AA00D0D8EB /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2421FCBE01300D0D8EB /* CoreVideo.framework */; };
+		3BCEA25C1FCBE0AC00D0D8EB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2411FCBE00B00D0D8EB /* CoreTelephony.framework */; };
+		3BCEA25D1FCBE0AE00D0D8EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2401FCBDFFB00D0D8EB /* Foundation.framework */; };
+		3BCEA25E1FCBE0B000D0D8EB /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA23F1FCBDFF100D0D8EB /* ImageIO.framework */; };
+		3BCEA25F1FCBE0B300D0D8EB /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA23E1FCBDFDE00D0D8EB /* JavaScriptCore.framework */; };
+		3BCEA2611FCBE0C500D0D8EB /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2601FCBE0C400D0D8EB /* libbz2.tbd */; };
+		3BCEA2631FCBE0D200D0D8EB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2621FCBE0D200D0D8EB /* libc++.tbd */; };
+		3BCEA2651FCBE0DD00D0D8EB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2641FCBE0DD00D0D8EB /* libiconv.tbd */; };
+		3BCEA2671FCBE0FD00D0D8EB /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2661FCBE0FD00D0D8EB /* libicucore.tbd */; };
+		3BCEA2691FCBE10B00D0D8EB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2681FCBE10B00D0D8EB /* libresolv.tbd */; };
+		3BCEA26B1FCBE12200D0D8EB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA26A1FCBE12200D0D8EB /* libsqlite3.tbd */; };
+		3BCEA26D1FCBE13200D0D8EB /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA26C1FCBE13100D0D8EB /* libstdc++.tbd */; };
+		3BCEA26F1FCBE15400D0D8EB /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA26E1FCBE15400D0D8EB /* libstdc++.6.tbd */; };
+		3BCEA2711FCBE15F00D0D8EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2701FCBE15F00D0D8EB /* libz.tbd */; };
 		68001A27BAE74A7360A2F29A /* libPods-TILVBDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +88,32 @@
 		3B0E82701FC81C84002EC856 /* TILVBRequestServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TILVBRequestServer.m; sourceTree = "<group>"; };
 		3B0E82721FC81F96002EC856 /* TILVBRequestServer+RequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TILVBRequestServer+RequestManager.h"; sourceTree = "<group>"; };
 		3B0E82731FC81F96002EC856 /* TILVBRequestServer+RequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TILVBRequestServer+RequestManager.m"; sourceTree = "<group>"; };
+		3BCEA23E1FCBDFDE00D0D8EB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		3BCEA23F1FCBDFF100D0D8EB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3BCEA2401FCBDFFB00D0D8EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3BCEA2411FCBE00B00D0D8EB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3BCEA2421FCBE01300D0D8EB /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		3BCEA2431FCBE01C00D0D8EB /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3BCEA2441FCBE02C00D0D8EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3BCEA2451FCBE03300D0D8EB /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		3BCEA2461FCBE03800D0D8EB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3BCEA2471FCBE04100D0D8EB /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		3BCEA2481FCBE05400D0D8EB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		3BCEA2491FCBE05E00D0D8EB /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		3BCEA24A1FCBE06900D0D8EB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3BCEA24B1FCBE07200D0D8EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3BCEA24C1FCBE07800D0D8EB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3BCEA24D1FCBE07E00D0D8EB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3BCEA24E1FCBE08800D0D8EB /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		3BCEA2601FCBE0C400D0D8EB /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		3BCEA2621FCBE0D200D0D8EB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3BCEA2641FCBE0DD00D0D8EB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		3BCEA2661FCBE0FD00D0D8EB /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		3BCEA2681FCBE10B00D0D8EB /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		3BCEA26A1FCBE12200D0D8EB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3BCEA26C1FCBE13100D0D8EB /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		3BCEA26E1FCBE15400D0D8EB /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		3BCEA2701FCBE15F00D0D8EB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TILVBDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,7 +122,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BCEA2591FCBE0A500D0D8EB /* CoreGraphics.framework in Frameworks */,
+				3BCEA2541FCBE09A00D0D8EB /* OpenAL.framework in Frameworks */,
+				3BCEA25F1FCBE0B300D0D8EB /* JavaScriptCore.framework in Frameworks */,
+				3BCEA2551FCBE09C00D0D8EB /* Accelerate.framework in Frameworks */,
+				3BCEA25E1FCBE0B000D0D8EB /* ImageIO.framework in Frameworks */,
+				3BCEA2671FCBE0FD00D0D8EB /* libicucore.tbd in Frameworks */,
+				3BCEA2571FCBE0A000D0D8EB /* AVFoundation.framework in Frameworks */,
+				3BCEA26D1FCBE13200D0D8EB /* libstdc++.tbd in Frameworks */,
+				3BCEA2631FCBE0D200D0D8EB /* libc++.tbd in Frameworks */,
+				3BCEA2521FCBE09600D0D8EB /* QuartzCore.framework in Frameworks */,
+				3BCEA24F1FCBE08F00D0D8EB /* VideoToolbox.framework in Frameworks */,
+				3BCEA2501FCBE09200D0D8EB /* UIKit.framework in Frameworks */,
+				3BCEA25D1FCBE0AE00D0D8EB /* Foundation.framework in Frameworks */,
+				3BCEA2611FCBE0C500D0D8EB /* libbz2.tbd in Frameworks */,
+				3BCEA25C1FCBE0AC00D0D8EB /* CoreTelephony.framework in Frameworks */,
+				3BCEA25B1FCBE0AA00D0D8EB /* CoreVideo.framework in Frameworks */,
+				3BCEA2511FCBE09400D0D8EB /* SystemConfiguration.framework in Frameworks */,
+				3BCEA2561FCBE09E00D0D8EB /* AssetsLibrary.framework in Frameworks */,
+				3BCEA25A1FCBE0A800D0D8EB /* CoreMedia.framework in Frameworks */,
+				3BCEA26B1FCBE12200D0D8EB /* libsqlite3.tbd in Frameworks */,
+				3BCEA2691FCBE10B00D0D8EB /* libresolv.tbd in Frameworks */,
+				3BCEA2581FCBE0A300D0D8EB /* AVKit.framework in Frameworks */,
+				3BCEA26F1FCBE15400D0D8EB /* libstdc++.6.tbd in Frameworks */,
+				3BCEA2651FCBE0DD00D0D8EB /* libiconv.tbd in Frameworks */,
 				68001A27BAE74A7360A2F29A /* libPods-TILVBDemo.a in Frameworks */,
+				3BCEA2711FCBE15F00D0D8EB /* libz.tbd in Frameworks */,
+				3BCEA2531FCBE09800D0D8EB /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +291,32 @@
 		E7A308429F335BE112993F96 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BCEA2701FCBE15F00D0D8EB /* libz.tbd */,
+				3BCEA26E1FCBE15400D0D8EB /* libstdc++.6.tbd */,
+				3BCEA26C1FCBE13100D0D8EB /* libstdc++.tbd */,
+				3BCEA26A1FCBE12200D0D8EB /* libsqlite3.tbd */,
+				3BCEA2681FCBE10B00D0D8EB /* libresolv.tbd */,
+				3BCEA2661FCBE0FD00D0D8EB /* libicucore.tbd */,
+				3BCEA2641FCBE0DD00D0D8EB /* libiconv.tbd */,
+				3BCEA2621FCBE0D200D0D8EB /* libc++.tbd */,
+				3BCEA2601FCBE0C400D0D8EB /* libbz2.tbd */,
+				3BCEA24E1FCBE08800D0D8EB /* VideoToolbox.framework */,
+				3BCEA24D1FCBE07E00D0D8EB /* UIKit.framework */,
+				3BCEA24C1FCBE07800D0D8EB /* SystemConfiguration.framework */,
+				3BCEA24B1FCBE07200D0D8EB /* QuartzCore.framework */,
+				3BCEA24A1FCBE06900D0D8EB /* OpenGLES.framework */,
+				3BCEA2491FCBE05E00D0D8EB /* OpenAL.framework */,
+				3BCEA2481FCBE05400D0D8EB /* Accelerate.framework */,
+				3BCEA2471FCBE04100D0D8EB /* AssetsLibrary.framework */,
+				3BCEA2461FCBE03800D0D8EB /* AVFoundation.framework */,
+				3BCEA2451FCBE03300D0D8EB /* AVKit.framework */,
+				3BCEA2441FCBE02C00D0D8EB /* CoreGraphics.framework */,
+				3BCEA2431FCBE01C00D0D8EB /* CoreMedia.framework */,
+				3BCEA2421FCBE01300D0D8EB /* CoreVideo.framework */,
+				3BCEA2411FCBE00B00D0D8EB /* CoreTelephony.framework */,
+				3BCEA2401FCBDFFB00D0D8EB /* Foundation.framework */,
+				3BCEA23F1FCBDFF100D0D8EB /* ImageIO.framework */,
+				3BCEA23E1FCBDFDE00D0D8EB /* JavaScriptCore.framework */,
 				9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */,
 			);
 			name = Frameworks;
