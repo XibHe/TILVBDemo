@@ -1,5 +1,10 @@
 QAVSDK.framework
 
+ILiveSDK.framework
+TILFilterResource.bundle
+TILFilterSDK.framework
+TILLiveSDK.framework
+
 IMCore.framework
 ImSDK.framework
 IMSDKBugly.framework

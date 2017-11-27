@@ -25,7 +25,10 @@
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[RegistViewController alloc] init]];
     self.window.rootViewController = nav;
-                                   
+    
+    NSString *ver = [[ILiveSDK getInstance] getVersion];
+    NSLog(@"ILiveSDK Version is %@", ver);
+    
     return YES;
 }
 

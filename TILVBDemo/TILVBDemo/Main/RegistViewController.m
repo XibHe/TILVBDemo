@@ -18,19 +18,7 @@
     [super viewDidLoad];
 
     self.title = @"注册";
-    [self registerRequest];
 }
 
-- (void)registerRequest
-{
-    NSDictionary *params = @{@"id": @"a123456",
-                             @"pwd": @"12345678"
-                             };
-    [TILVBRequestServer getRegistedWithParams:params success:^(id JSON) {
-        CLog(@"");
-    } failure:^(NSError *error) {
-        CLog(@"");
-    }];
-}
 
 @end

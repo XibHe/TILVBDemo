@@ -44,13 +44,29 @@
 		3BCEA26F1FCBE15400D0D8EB /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA26E1FCBE15400D0D8EB /* libstdc++.6.tbd */; };
 		3BCEA2711FCBE15F00D0D8EB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2701FCBE15F00D0D8EB /* libz.tbd */; };
 		3BCEA2931FCBE34700D0D8EB /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2811FCBE34700D0D8EB /* BaseRequest.m */; };
-		3BCEA2941FCBE34700D0D8EB /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2841FCBE34700D0D8EB /* JSONKit.m */; };
+		3BCEA2941FCBE34700D0D8EB /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2841FCBE34700D0D8EB /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		3BCEA2951FCBE34700D0D8EB /* NSMutableDictionary+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2861FCBE34700D0D8EB /* NSMutableDictionary+Json.m */; };
 		3BCEA2961FCBE34700D0D8EB /* NSObject+Json.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2881FCBE34700D0D8EB /* NSObject+Json.m */; };
 		3BCEA2971FCBE34700D0D8EB /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA28B1FCBE34700D0D8EB /* LoginRequest.m */; };
 		3BCEA2981FCBE34700D0D8EB /* RegistRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA28D1FCBE34700D0D8EB /* RegistRequest.m */; };
 		3BCEA2991FCBE34700D0D8EB /* WebModels.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA28F1FCBE34700D0D8EB /* WebModels.m */; };
 		3BCEA29A1FCBE34700D0D8EB /* WebServiceEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2911FCBE34700D0D8EB /* WebServiceEngine.m */; };
+		3BCEA2B21FCBE4FC00D0D8EB /* QAVSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA29E1FCBE4FC00D0D8EB /* QAVSDK.framework */; };
+		3BCEA2B31FCBE4FC00D0D8EB /* ILiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2A01FCBE4FC00D0D8EB /* ILiveSDK.framework */; };
+		3BCEA2B41FCBE4FC00D0D8EB /* TILFilterResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA2A11FCBE4FC00D0D8EB /* TILFilterResource.bundle */; };
+		3BCEA2B51FCBE4FC00D0D8EB /* TILFilterSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2A21FCBE4FC00D0D8EB /* TILFilterSDK.framework */; };
+		3BCEA2B61FCBE4FC00D0D8EB /* TILLiveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2A31FCBE4FC00D0D8EB /* TILLiveSDK.framework */; };
+		3BCEA2B71FCBE4FC00D0D8EB /* IMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2A51FCBE4FC00D0D8EB /* IMCore.framework */; };
+		3BCEA2B81FCBE4FC00D0D8EB /* ImSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2A61FCBE4FC00D0D8EB /* ImSDK.framework */; };
+		3BCEA2B91FCBE4FC00D0D8EB /* IMSDKBugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2A71FCBE4FC00D0D8EB /* IMSDKBugly.framework */; };
+		3BCEA2BA1FCBE4FC00D0D8EB /* QALSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2A81FCBE4FC00D0D8EB /* QALSDK.framework */; };
+		3BCEA2BB1FCBE4FC00D0D8EB /* TLSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2A91FCBE4FC00D0D8EB /* TLSSDK.framework */; };
+		3BCEA2BD1FCBE4FC00D0D8EB /* DecoRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA2AC1FCBE4FC00D0D8EB /* DecoRes.bundle */; };
+		3BCEA2BE1FCBE4FC00D0D8EB /* FilterRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA2AD1FCBE4FC00D0D8EB /* FilterRes.bundle */; };
+		3BCEA2BF1FCBE4FC00D0D8EB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2AE1FCBE4FC00D0D8EB /* opencv2.framework */; };
+		3BCEA2C01FCBE4FC00D0D8EB /* PE.dat in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA2AF1FCBE4FC00D0D8EB /* PE.dat */; };
+		3BCEA2C11FCBE4FC00D0D8EB /* QAVEffect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2B01FCBE4FC00D0D8EB /* QAVEffect.framework */; };
+		3BCEA2C21FCBE4FC00D0D8EB /* QAVEffectRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA2B11FCBE4FC00D0D8EB /* QAVEffectRes.bundle */; };
 		68001A27BAE74A7360A2F29A /* libPods-TILVBDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +157,22 @@
 		3BCEA2911FCBE34700D0D8EB /* WebServiceEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceEngine.m; sourceTree = "<group>"; };
 		3BCEA2921FCBE34700D0D8EB /* WebServiceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceHeader.h; sourceTree = "<group>"; };
 		3BCEA29B1FCBE39B00D0D8EB /* ConstHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConstHeader.h; sourceTree = "<group>"; };
+		3BCEA29E1FCBE4FC00D0D8EB /* QAVSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVSDK.framework; sourceTree = "<group>"; };
+		3BCEA2A01FCBE4FC00D0D8EB /* ILiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ILiveSDK.framework; sourceTree = "<group>"; };
+		3BCEA2A11FCBE4FC00D0D8EB /* TILFilterResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TILFilterResource.bundle; sourceTree = "<group>"; };
+		3BCEA2A21FCBE4FC00D0D8EB /* TILFilterSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TILFilterSDK.framework; sourceTree = "<group>"; };
+		3BCEA2A31FCBE4FC00D0D8EB /* TILLiveSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TILLiveSDK.framework; sourceTree = "<group>"; };
+		3BCEA2A51FCBE4FC00D0D8EB /* IMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMCore.framework; sourceTree = "<group>"; };
+		3BCEA2A61FCBE4FC00D0D8EB /* ImSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ImSDK.framework; sourceTree = "<group>"; };
+		3BCEA2A71FCBE4FC00D0D8EB /* IMSDKBugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IMSDKBugly.framework; sourceTree = "<group>"; };
+		3BCEA2A81FCBE4FC00D0D8EB /* QALSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QALSDK.framework; sourceTree = "<group>"; };
+		3BCEA2A91FCBE4FC00D0D8EB /* TLSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TLSSDK.framework; sourceTree = "<group>"; };
+		3BCEA2AC1FCBE4FC00D0D8EB /* DecoRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DecoRes.bundle; sourceTree = "<group>"; };
+		3BCEA2AD1FCBE4FC00D0D8EB /* FilterRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FilterRes.bundle; sourceTree = "<group>"; };
+		3BCEA2AE1FCBE4FC00D0D8EB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		3BCEA2AF1FCBE4FC00D0D8EB /* PE.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = PE.dat; sourceTree = "<group>"; };
+		3BCEA2B01FCBE4FC00D0D8EB /* QAVEffect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVEffect.framework; sourceTree = "<group>"; };
+		3BCEA2B11FCBE4FC00D0D8EB /* QAVEffectRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QAVEffectRes.bundle; sourceTree = "<group>"; };
 		9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TILVBDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,30 +182,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BCEA2591FCBE0A500D0D8EB /* CoreGraphics.framework in Frameworks */,
+				3BCEA2B31FCBE4FC00D0D8EB /* ILiveSDK.framework in Frameworks */,
 				3BCEA2541FCBE09A00D0D8EB /* OpenAL.framework in Frameworks */,
 				3BCEA25F1FCBE0B300D0D8EB /* JavaScriptCore.framework in Frameworks */,
 				3BCEA2551FCBE09C00D0D8EB /* Accelerate.framework in Frameworks */,
+				3BCEA2B51FCBE4FC00D0D8EB /* TILFilterSDK.framework in Frameworks */,
 				3BCEA25E1FCBE0B000D0D8EB /* ImageIO.framework in Frameworks */,
 				3BCEA2671FCBE0FD00D0D8EB /* libicucore.tbd in Frameworks */,
+				3BCEA2BA1FCBE4FC00D0D8EB /* QALSDK.framework in Frameworks */,
 				3BCEA2571FCBE0A000D0D8EB /* AVFoundation.framework in Frameworks */,
 				3BCEA26D1FCBE13200D0D8EB /* libstdc++.tbd in Frameworks */,
 				3BCEA2631FCBE0D200D0D8EB /* libc++.tbd in Frameworks */,
+				3BCEA2B71FCBE4FC00D0D8EB /* IMCore.framework in Frameworks */,
 				3BCEA2521FCBE09600D0D8EB /* QuartzCore.framework in Frameworks */,
 				3BCEA24F1FCBE08F00D0D8EB /* VideoToolbox.framework in Frameworks */,
 				3BCEA2501FCBE09200D0D8EB /* UIKit.framework in Frameworks */,
 				3BCEA25D1FCBE0AE00D0D8EB /* Foundation.framework in Frameworks */,
 				3BCEA2611FCBE0C500D0D8EB /* libbz2.tbd in Frameworks */,
+				3BCEA2BF1FCBE4FC00D0D8EB /* opencv2.framework in Frameworks */,
 				3BCEA25C1FCBE0AC00D0D8EB /* CoreTelephony.framework in Frameworks */,
 				3BCEA25B1FCBE0AA00D0D8EB /* CoreVideo.framework in Frameworks */,
+				3BCEA2B91FCBE4FC00D0D8EB /* IMSDKBugly.framework in Frameworks */,
+				3BCEA2B61FCBE4FC00D0D8EB /* TILLiveSDK.framework in Frameworks */,
 				3BCEA2511FCBE09400D0D8EB /* SystemConfiguration.framework in Frameworks */,
 				3BCEA2561FCBE09E00D0D8EB /* AssetsLibrary.framework in Frameworks */,
+				3BCEA2B21FCBE4FC00D0D8EB /* QAVSDK.framework in Frameworks */,
 				3BCEA25A1FCBE0A800D0D8EB /* CoreMedia.framework in Frameworks */,
 				3BCEA26B1FCBE12200D0D8EB /* libsqlite3.tbd in Frameworks */,
 				3BCEA2691FCBE10B00D0D8EB /* libresolv.tbd in Frameworks */,
+				3BCEA2B81FCBE4FC00D0D8EB /* ImSDK.framework in Frameworks */,
+				3BCEA2C11FCBE4FC00D0D8EB /* QAVEffect.framework in Frameworks */,
 				3BCEA2581FCBE0A300D0D8EB /* AVKit.framework in Frameworks */,
 				3BCEA26F1FCBE15400D0D8EB /* libstdc++.6.tbd in Frameworks */,
 				3BCEA2651FCBE0DD00D0D8EB /* libiconv.tbd in Frameworks */,
 				68001A27BAE74A7360A2F29A /* libPods-TILVBDemo.a in Frameworks */,
+				3BCEA2BB1FCBE4FC00D0D8EB /* TLSSDK.framework in Frameworks */,
 				3BCEA2711FCBE15F00D0D8EB /* libz.tbd in Frameworks */,
 				3BCEA2531FCBE09800D0D8EB /* OpenGLES.framework in Frameworks */,
 			);
@@ -199,6 +242,7 @@
 		3B0E82181FC7D06F002EC856 = {
 			isa = PBXGroup;
 			children = (
+				3BCEA29C1FCBE4FC00D0D8EB /* ILVBSDKs */,
 				3B0E82231FC7D06F002EC856 /* TILVBDemo */,
 				3B0E823C1FC7D06F002EC856 /* TILVBDemoTests */,
 				3B0E82471FC7D06F002EC856 /* TILVBDemoUITests */,
@@ -347,6 +391,61 @@
 				3BCEA28D1FCBE34700D0D8EB /* RegistRequest.m */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		3BCEA29C1FCBE4FC00D0D8EB /* ILVBSDKs */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA29D1FCBE4FC00D0D8EB /* AVSDK */,
+				3BCEA29F1FCBE4FC00D0D8EB /* ILiveSDK */,
+				3BCEA2A41FCBE4FC00D0D8EB /* IMSDK */,
+				3BCEA2AB1FCBE4FC00D0D8EB /* QAVEffect */,
+			);
+			path = ILVBSDKs;
+			sourceTree = "<group>";
+		};
+		3BCEA29D1FCBE4FC00D0D8EB /* AVSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA29E1FCBE4FC00D0D8EB /* QAVSDK.framework */,
+			);
+			path = AVSDK;
+			sourceTree = "<group>";
+		};
+		3BCEA29F1FCBE4FC00D0D8EB /* ILiveSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA2A01FCBE4FC00D0D8EB /* ILiveSDK.framework */,
+				3BCEA2A11FCBE4FC00D0D8EB /* TILFilterResource.bundle */,
+				3BCEA2A21FCBE4FC00D0D8EB /* TILFilterSDK.framework */,
+				3BCEA2A31FCBE4FC00D0D8EB /* TILLiveSDK.framework */,
+			);
+			path = ILiveSDK;
+			sourceTree = "<group>";
+		};
+		3BCEA2A41FCBE4FC00D0D8EB /* IMSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA2A51FCBE4FC00D0D8EB /* IMCore.framework */,
+				3BCEA2A61FCBE4FC00D0D8EB /* ImSDK.framework */,
+				3BCEA2A71FCBE4FC00D0D8EB /* IMSDKBugly.framework */,
+				3BCEA2A81FCBE4FC00D0D8EB /* QALSDK.framework */,
+				3BCEA2A91FCBE4FC00D0D8EB /* TLSSDK.framework */,
+			);
+			path = IMSDK;
+			sourceTree = "<group>";
+		};
+		3BCEA2AB1FCBE4FC00D0D8EB /* QAVEffect */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA2AC1FCBE4FC00D0D8EB /* DecoRes.bundle */,
+				3BCEA2AD1FCBE4FC00D0D8EB /* FilterRes.bundle */,
+				3BCEA2AE1FCBE4FC00D0D8EB /* opencv2.framework */,
+				3BCEA2AF1FCBE4FC00D0D8EB /* PE.dat */,
+				3BCEA2B01FCBE4FC00D0D8EB /* QAVEffect.framework */,
+				3BCEA2B11FCBE4FC00D0D8EB /* QAVEffectRes.bundle */,
+			);
+			path = QAVEffect;
 			sourceTree = "<group>";
 		};
 		CE9F3D495729F054BE2703D6 /* Pods */ = {
@@ -502,7 +601,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B0E82311FC7D06F002EC856 /* LaunchScreen.storyboard in Resources */,
+				3BCEA2C01FCBE4FC00D0D8EB /* PE.dat in Resources */,
+				3BCEA2C21FCBE4FC00D0D8EB /* QAVEffectRes.bundle in Resources */,
+				3BCEA2BD1FCBE4FC00D0D8EB /* DecoRes.bundle in Resources */,
 				3B0E822E1FC7D06F002EC856 /* Assets.xcassets in Resources */,
+				3BCEA2BE1FCBE4FC00D0D8EB /* FilterRes.bundle in Resources */,
+				3BCEA2B41FCBE4FC00D0D8EB /* TILFilterResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +857,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ILVBSDKs/AVSDK",
+					"$(PROJECT_DIR)/ILVBSDKs/ILiveSDK",
+					"$(PROJECT_DIR)/ILVBSDKs/IMSDK",
+					"$(PROJECT_DIR)/ILVBSDKs/QAVEffect",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TILVBDemo/TILVBDemo.pch;
 				INFOPLIST_FILE = TILVBDemo/Info.plist;
@@ -771,6 +883,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TPXMNBN2HM;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ILVBSDKs/AVSDK",
+					"$(PROJECT_DIR)/ILVBSDKs/ILiveSDK",
+					"$(PROJECT_DIR)/ILVBSDKs/IMSDK",
+					"$(PROJECT_DIR)/ILVBSDKs/QAVEffect",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TILVBDemo/TILVBDemo.pch;
 				INFOPLIST_FILE = TILVBDemo/Info.plist;
