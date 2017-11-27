@@ -67,6 +67,8 @@
 		3BCEA2C01FCBE4FC00D0D8EB /* PE.dat in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA2AF1FCBE4FC00D0D8EB /* PE.dat */; };
 		3BCEA2C11FCBE4FC00D0D8EB /* QAVEffect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA2B01FCBE4FC00D0D8EB /* QAVEffect.framework */; };
 		3BCEA2C21FCBE4FC00D0D8EB /* QAVEffectRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA2B11FCBE4FC00D0D8EB /* QAVEffectRes.bundle */; };
+		3BCEA2C61FCBFD7000D0D8EB /* AlertHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2C51FCBFD7000D0D8EB /* AlertHelp.m */; };
+		3BCEA2CC1FCC084000D0D8EB /* LiveMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2CB1FCC084000D0D8EB /* LiveMainViewController.m */; };
 		68001A27BAE74A7360A2F29A /* libPods-TILVBDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -173,6 +175,12 @@
 		3BCEA2AF1FCBE4FC00D0D8EB /* PE.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = PE.dat; sourceTree = "<group>"; };
 		3BCEA2B01FCBE4FC00D0D8EB /* QAVEffect.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QAVEffect.framework; sourceTree = "<group>"; };
 		3BCEA2B11FCBE4FC00D0D8EB /* QAVEffectRes.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QAVEffectRes.bundle; sourceTree = "<group>"; };
+		3BCEA2C41FCBFD7000D0D8EB /* AlertHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertHelp.h; sourceTree = "<group>"; };
+		3BCEA2C51FCBFD7000D0D8EB /* AlertHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertHelp.m; sourceTree = "<group>"; };
+		3BCEA2C71FCBFDAE00D0D8EB /* CustomUIHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomUIHeader.h; sourceTree = "<group>"; };
+		3BCEA2C81FCBFFC600D0D8EB /* RequestHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestHeader.h; sourceTree = "<group>"; };
+		3BCEA2CA1FCC084000D0D8EB /* LiveMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveMainViewController.h; sourceTree = "<group>"; };
+		3BCEA2CB1FCC084000D0D8EB /* LiveMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveMainViewController.m; sourceTree = "<group>"; };
 		9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TILVBDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -265,6 +273,7 @@
 		3B0E82231FC7D06F002EC856 /* TILVBDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3BCEA2C31FCBFD7000D0D8EB /* CustomUI */,
 				3BCEA27E1FCBE34700D0D8EB /* WebService */,
 				3B0E82651FC810EF002EC856 /* Base */,
 				3B0E82571FC808FD002EC856 /* AppDelegate */,
@@ -323,6 +332,7 @@
 		3B0E825C1FC8096C002EC856 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3BCEA2C91FCC07FD00D0D8EB /* LiveList */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -389,6 +399,7 @@
 				3BCEA28B1FCBE34700D0D8EB /* LoginRequest.m */,
 				3BCEA28C1FCBE34700D0D8EB /* RegistRequest.h */,
 				3BCEA28D1FCBE34700D0D8EB /* RegistRequest.m */,
+				3BCEA2C81FCBFFC600D0D8EB /* RequestHeader.h */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -446,6 +457,25 @@
 				3BCEA2B11FCBE4FC00D0D8EB /* QAVEffectRes.bundle */,
 			);
 			path = QAVEffect;
+			sourceTree = "<group>";
+		};
+		3BCEA2C31FCBFD7000D0D8EB /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA2C41FCBFD7000D0D8EB /* AlertHelp.h */,
+				3BCEA2C51FCBFD7000D0D8EB /* AlertHelp.m */,
+				3BCEA2C71FCBFDAE00D0D8EB /* CustomUIHeader.h */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		3BCEA2C91FCC07FD00D0D8EB /* LiveList */ = {
+			isa = PBXGroup;
+			children = (
+				3BCEA2CA1FCC084000D0D8EB /* LiveMainViewController.h */,
+				3BCEA2CB1FCC084000D0D8EB /* LiveMainViewController.m */,
+			);
+			path = LiveList;
 			sourceTree = "<group>";
 		};
 		CE9F3D495729F054BE2703D6 /* Pods */ = {
@@ -693,8 +723,10 @@
 				3BCEA2971FCBE34700D0D8EB /* LoginRequest.m in Sources */,
 				3BCEA2981FCBE34700D0D8EB /* RegistRequest.m in Sources */,
 				3BCEA2931FCBE34700D0D8EB /* BaseRequest.m in Sources */,
+				3BCEA2CC1FCC084000D0D8EB /* LiveMainViewController.m in Sources */,
 				3B0E82341FC7D06F002EC856 /* main.m in Sources */,
 				3BCEA29A1FCBE34700D0D8EB /* WebServiceEngine.m in Sources */,
+				3BCEA2C61FCBFD7000D0D8EB /* AlertHelp.m in Sources */,
 				3BCEA2991FCBE34700D0D8EB /* WebModels.m in Sources */,
 				3BCEA2941FCBE34700D0D8EB /* JSONKit.m in Sources */,
 				3BCEA2961FCBE34700D0D8EB /* NSObject+Json.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "RegistViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,23 +15,41 @@
 
 @implementation AppDelegate
 
++ (instancetype)sharedAppDelegate
+{
+    return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self setUpSVProgress];
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[RegistViewController alloc] init]];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] init]];
     self.window.rootViewController = nav;
     
+    // 初始化SDK
+    [[ILiveSDK getInstance] initSdk:[ShowAppId intValue] accountType:[ShowAccountType intValue]];
+    
     NSString *ver = [[ILiveSDK getInstance] getVersion];
-    NSLog(@"ILiveSDK Version is %@", ver);
+    CLog(@"ILiveSDK Version is %@", ver);
     
     return YES;
 }
 
+#pragma mark 控制等待提示样式
+-(void)setUpSVProgress
+{
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleCustom];
+    [SVProgressHUD setBackgroundColor:[UIColor blackColor]];
+    [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
+    [SVProgressHUD setMinimumDismissTimeInterval:1];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

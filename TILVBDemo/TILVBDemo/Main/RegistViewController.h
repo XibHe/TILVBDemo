@@ -10,6 +10,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegistViewController : UIViewController
+@protocol RegistViewControllerDelegate <NSObject>
+- (void)showRegistUserIdentifier:(NSString *)identifier;
+- (void)showRegistUserPwd:(NSString *)passward;
+@end
 
+@interface RegistViewController : UIViewController
+@property (nonatomic, weak) id<RegistViewControllerDelegate> delegate;
 @end
