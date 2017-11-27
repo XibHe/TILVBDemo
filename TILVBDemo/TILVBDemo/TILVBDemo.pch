@@ -12,6 +12,19 @@
 
 #define kILVBHost @"https://sxb.qcloud.com/sxb_dev/index.php?"
 
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+
+
+
+
+
+
+#import "ConstHeader.h"
+
+
 // 日志输出宏定义
 #ifdef DEBUG
 #define CLog( s, ... ) printf("class: <%p %s:(%d) > method: %s \n%s\n", self, [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:(s), ##__VA_ARGS__] UTF8String] );
