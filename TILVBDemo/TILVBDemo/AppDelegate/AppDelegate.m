@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate ()<QAVLogger>
 
 @end
 
@@ -32,6 +32,21 @@
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[LoginViewController alloc] init]];
     self.window.rootViewController = nav;
     
+    
+    TIMManager *manager = [[ILiveSDK getInstance] getTIMManager];
+    
+    NSNumber *evn = [[NSUserDefaults standardUserDefaults] objectForKey:kEnvParam];
+    [manager setEnv:[evn intValue]];
+    
+    NSNumber *logLevel = [[NSUserDefaults standardUserDefaults] objectForKey:kLogLevel];
+    if (!logLevel)//默认debug等级
+    {
+        [[NSUserDefaults standardUserDefaults] setObject:@(TIM_LOG_DEBUG) forKey:kLogLevel];
+        logLevel = @(TIM_LOG_DEBUG);
+    }
+    [self disableLogPrint];//禁用日志控制台打印
+    [manager setLogLevel:(TIMLogLevel)[logLevel integerValue]];
+    
     // 初始化SDK
     [[ILiveSDK getInstance] initSdk:[ShowAppId intValue] accountType:[ShowAccountType intValue]];
     
@@ -49,6 +64,25 @@
     [SVProgressHUD setForegroundColor:[UIColor whiteColor]];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeNone];
     [SVProgressHUD setMinimumDismissTimeInterval:1];
+}
+
+- (void)disableLogPrint
+{
+    TIMManager *manager = [[ILiveSDK getInstance] getTIMManager];
+    [manager initLogSettings:NO logPath:[manager getLogPath]];
+    [[ILiveSDK getInstance] setConsoleLogPrint:NO];
+    [QAVAppChannelMgr setExternalLogger:self];
+}
+
+#pragma mark - avsdk日志代理
+- (BOOL)isLogPrint
+{
+    return NO;
+}
+
+- (NSString *)getLogPath
+{
+    return [[TIMManager sharedInstance] getLogPath];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

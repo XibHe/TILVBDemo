@@ -17,6 +17,13 @@
 		3B0E82641FC80B3E002EC856 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82631FC80B3E002EC856 /* LoginViewController.m */; };
 		3B0E82711FC81C84002EC856 /* TILVBRequestServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82701FC81C84002EC856 /* TILVBRequestServer.m */; };
 		3B0E82741FC81F96002EC856 /* TILVBRequestServer+RequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0E82731FC81F96002EC856 /* TILVBRequestServer+RequestManager.m */; };
+		3B2FB6861FCD5A1B00DC5A51 /* LiveListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB6851FCD5A1A00DC5A51 /* LiveListTableViewCell.m */; };
+		3B2FB6931FCD5D4400DC5A51 /* UIColor+MLPFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB68A1FCD5D4400DC5A51 /* UIColor+MLPFlatColors.m */; };
+		3B2FB6941FCD5D4400DC5A51 /* UIImage+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB68C1FCD5D4400DC5A51 /* UIImage+Common.m */; };
+		3B2FB6951FCD5D4400DC5A51 /* UIImage+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB68E1FCD5D4400DC5A51 /* UIImage+TintColor.m */; };
+		3B2FB6961FCD5D4400DC5A51 /* UIView+CustomAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB6901FCD5D4400DC5A51 /* UIView+CustomAutoLayout.m */; };
+		3B2FB6971FCD5D4400DC5A51 /* UIView+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB6921FCD5D4400DC5A51 /* UIView+ShakeAnimation.m */; };
+		3B2FB69A1FCD601500DC5A51 /* RoomListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB6991FCD601500DC5A51 /* RoomListRequest.m */; };
 		3BCEA24F1FCBE08F00D0D8EB /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24E1FCBE08800D0D8EB /* VideoToolbox.framework */; };
 		3BCEA2501FCBE09200D0D8EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24D1FCBE07E00D0D8EB /* UIKit.framework */; };
 		3BCEA2511FCBE09400D0D8EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24C1FCBE07800D0D8EB /* SystemConfiguration.framework */; };
@@ -69,6 +76,8 @@
 		3BCEA2C21FCBE4FC00D0D8EB /* QAVEffectRes.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3BCEA2B11FCBE4FC00D0D8EB /* QAVEffectRes.bundle */; };
 		3BCEA2C61FCBFD7000D0D8EB /* AlertHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2C51FCBFD7000D0D8EB /* AlertHelp.m */; };
 		3BCEA2CC1FCC084000D0D8EB /* LiveMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2CB1FCC084000D0D8EB /* LiveMainViewController.m */; };
+		3BCEA2CF1FCD170200D0D8EB /* LiveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2CE1FCD170200D0D8EB /* LiveListViewController.m */; };
+		3BCEA2D21FCD173B00D0D8EB /* RecordListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BCEA2D11FCD173B00D0D8EB /* RecordListViewController.m */; };
 		68001A27BAE74A7360A2F29A /* libPods-TILVBDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +123,21 @@
 		3B0E82701FC81C84002EC856 /* TILVBRequestServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TILVBRequestServer.m; sourceTree = "<group>"; };
 		3B0E82721FC81F96002EC856 /* TILVBRequestServer+RequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TILVBRequestServer+RequestManager.h"; sourceTree = "<group>"; };
 		3B0E82731FC81F96002EC856 /* TILVBRequestServer+RequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "TILVBRequestServer+RequestManager.m"; sourceTree = "<group>"; };
+		3B2FB6841FCD5A1A00DC5A51 /* LiveListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveListTableViewCell.h; sourceTree = "<group>"; };
+		3B2FB6851FCD5A1A00DC5A51 /* LiveListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveListTableViewCell.m; sourceTree = "<group>"; };
+		3B2FB6881FCD5D4400DC5A51 /* CategoryHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryHeader.h; sourceTree = "<group>"; };
+		3B2FB6891FCD5D4400DC5A51 /* UIColor+MLPFlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MLPFlatColors.h"; sourceTree = "<group>"; };
+		3B2FB68A1FCD5D4400DC5A51 /* UIColor+MLPFlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MLPFlatColors.m"; sourceTree = "<group>"; };
+		3B2FB68B1FCD5D4400DC5A51 /* UIImage+Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Common.h"; sourceTree = "<group>"; };
+		3B2FB68C1FCD5D4400DC5A51 /* UIImage+Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Common.m"; sourceTree = "<group>"; };
+		3B2FB68D1FCD5D4400DC5A51 /* UIImage+TintColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+TintColor.h"; sourceTree = "<group>"; };
+		3B2FB68E1FCD5D4400DC5A51 /* UIImage+TintColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TintColor.m"; sourceTree = "<group>"; };
+		3B2FB68F1FCD5D4400DC5A51 /* UIView+CustomAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CustomAutoLayout.h"; sourceTree = "<group>"; };
+		3B2FB6901FCD5D4400DC5A51 /* UIView+CustomAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CustomAutoLayout.m"; sourceTree = "<group>"; };
+		3B2FB6911FCD5D4400DC5A51 /* UIView+ShakeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ShakeAnimation.h"; sourceTree = "<group>"; };
+		3B2FB6921FCD5D4400DC5A51 /* UIView+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShakeAnimation.m"; sourceTree = "<group>"; };
+		3B2FB6981FCD601500DC5A51 /* RoomListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomListRequest.h; sourceTree = "<group>"; };
+		3B2FB6991FCD601500DC5A51 /* RoomListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomListRequest.m; sourceTree = "<group>"; };
 		3BCEA23E1FCBDFDE00D0D8EB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3BCEA23F1FCBDFF100D0D8EB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		3BCEA2401FCBDFFB00D0D8EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -181,6 +205,10 @@
 		3BCEA2C81FCBFFC600D0D8EB /* RequestHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestHeader.h; sourceTree = "<group>"; };
 		3BCEA2CA1FCC084000D0D8EB /* LiveMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveMainViewController.h; sourceTree = "<group>"; };
 		3BCEA2CB1FCC084000D0D8EB /* LiveMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveMainViewController.m; sourceTree = "<group>"; };
+		3BCEA2CD1FCD170200D0D8EB /* LiveListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveListViewController.h; sourceTree = "<group>"; };
+		3BCEA2CE1FCD170200D0D8EB /* LiveListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveListViewController.m; sourceTree = "<group>"; };
+		3BCEA2D01FCD173B00D0D8EB /* RecordListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordListViewController.h; sourceTree = "<group>"; };
+		3BCEA2D11FCD173B00D0D8EB /* RecordListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordListViewController.m; sourceTree = "<group>"; };
 		9631520CC7D232B8FD409FEE /* libPods-TILVBDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TILVBDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -273,6 +301,7 @@
 		3B0E82231FC7D06F002EC856 /* TILVBDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3B2FB6871FCD5D4400DC5A51 /* Category */,
 				3BCEA2C31FCBFD7000D0D8EB /* CustomUI */,
 				3BCEA27E1FCBE34700D0D8EB /* WebService */,
 				3B0E82651FC810EF002EC856 /* Base */,
@@ -347,6 +376,7 @@
 		3B0E825E1FC80983002EC856 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3B2FB6831FCD5A1A00DC5A51 /* LiveListCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -360,6 +390,33 @@
 				3B0E82731FC81F96002EC856 /* TILVBRequestServer+RequestManager.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		3B2FB6831FCD5A1A00DC5A51 /* LiveListCell */ = {
+			isa = PBXGroup;
+			children = (
+				3B2FB6841FCD5A1A00DC5A51 /* LiveListTableViewCell.h */,
+				3B2FB6851FCD5A1A00DC5A51 /* LiveListTableViewCell.m */,
+			);
+			path = LiveListCell;
+			sourceTree = "<group>";
+		};
+		3B2FB6871FCD5D4400DC5A51 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3B2FB6881FCD5D4400DC5A51 /* CategoryHeader.h */,
+				3B2FB6891FCD5D4400DC5A51 /* UIColor+MLPFlatColors.h */,
+				3B2FB68A1FCD5D4400DC5A51 /* UIColor+MLPFlatColors.m */,
+				3B2FB68B1FCD5D4400DC5A51 /* UIImage+Common.h */,
+				3B2FB68C1FCD5D4400DC5A51 /* UIImage+Common.m */,
+				3B2FB68D1FCD5D4400DC5A51 /* UIImage+TintColor.h */,
+				3B2FB68E1FCD5D4400DC5A51 /* UIImage+TintColor.m */,
+				3B2FB68F1FCD5D4400DC5A51 /* UIView+CustomAutoLayout.h */,
+				3B2FB6901FCD5D4400DC5A51 /* UIView+CustomAutoLayout.m */,
+				3B2FB6911FCD5D4400DC5A51 /* UIView+ShakeAnimation.h */,
+				3B2FB6921FCD5D4400DC5A51 /* UIView+ShakeAnimation.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		3BCEA27E1FCBE34700D0D8EB /* WebService */ = {
@@ -395,6 +452,8 @@
 		3BCEA2891FCBE34700D0D8EB /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				3B2FB6981FCD601500DC5A51 /* RoomListRequest.h */,
+				3B2FB6991FCD601500DC5A51 /* RoomListRequest.m */,
 				3BCEA28A1FCBE34700D0D8EB /* LoginRequest.h */,
 				3BCEA28B1FCBE34700D0D8EB /* LoginRequest.m */,
 				3BCEA28C1FCBE34700D0D8EB /* RegistRequest.h */,
@@ -474,6 +533,10 @@
 			children = (
 				3BCEA2CA1FCC084000D0D8EB /* LiveMainViewController.h */,
 				3BCEA2CB1FCC084000D0D8EB /* LiveMainViewController.m */,
+				3BCEA2CD1FCD170200D0D8EB /* LiveListViewController.h */,
+				3BCEA2CE1FCD170200D0D8EB /* LiveListViewController.m */,
+				3BCEA2D01FCD173B00D0D8EB /* RecordListViewController.h */,
+				3BCEA2D11FCD173B00D0D8EB /* RecordListViewController.m */,
 			);
 			path = LiveList;
 			sourceTree = "<group>";
@@ -716,20 +779,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2FB6931FCD5D4400DC5A51 /* UIColor+MLPFlatColors.m in Sources */,
 				3B0E82641FC80B3E002EC856 /* LoginViewController.m in Sources */,
+				3B2FB6971FCD5D4400DC5A51 /* UIView+ShakeAnimation.m in Sources */,
 				3B0E82711FC81C84002EC856 /* TILVBRequestServer.m in Sources */,
 				3B0E82741FC81F96002EC856 /* TILVBRequestServer+RequestManager.m in Sources */,
+				3B2FB6941FCD5D4400DC5A51 /* UIImage+Common.m in Sources */,
 				3B0E825A1FC808FD002EC856 /* AppDelegate.m in Sources */,
 				3BCEA2971FCBE34700D0D8EB /* LoginRequest.m in Sources */,
 				3BCEA2981FCBE34700D0D8EB /* RegistRequest.m in Sources */,
 				3BCEA2931FCBE34700D0D8EB /* BaseRequest.m in Sources */,
 				3BCEA2CC1FCC084000D0D8EB /* LiveMainViewController.m in Sources */,
+				3B2FB6951FCD5D4400DC5A51 /* UIImage+TintColor.m in Sources */,
+				3B2FB69A1FCD601500DC5A51 /* RoomListRequest.m in Sources */,
+				3BCEA2CF1FCD170200D0D8EB /* LiveListViewController.m in Sources */,
+				3BCEA2D21FCD173B00D0D8EB /* RecordListViewController.m in Sources */,
 				3B0E82341FC7D06F002EC856 /* main.m in Sources */,
 				3BCEA29A1FCBE34700D0D8EB /* WebServiceEngine.m in Sources */,
 				3BCEA2C61FCBFD7000D0D8EB /* AlertHelp.m in Sources */,
+				3B2FB6861FCD5A1B00DC5A51 /* LiveListTableViewCell.m in Sources */,
 				3BCEA2991FCBE34700D0D8EB /* WebModels.m in Sources */,
 				3BCEA2941FCBE34700D0D8EB /* JSONKit.m in Sources */,
 				3BCEA2961FCBE34700D0D8EB /* NSObject+Json.m in Sources */,
+				3B2FB6961FCD5D4400DC5A51 /* UIView+CustomAutoLayout.m in Sources */,
 				3BCEA2951FCBE34700D0D8EB /* NSMutableDictionary+Json.m in Sources */,
 				3B0E82611FC80B1F002EC856 /* RegistViewController.m in Sources */,
 			);
@@ -902,6 +974,12 @@
 				INFOPLIST_FILE = TILVBDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJRefresh\"",
+					"-l\"SVProgressHUD\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.TILVBDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -928,6 +1006,12 @@
 				INFOPLIST_FILE = TILVBDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"MJRefresh\"",
+					"-l\"SVProgressHUD\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lonch.TILVBDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

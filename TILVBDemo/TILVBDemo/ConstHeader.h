@@ -28,6 +28,7 @@ alpha:1.0]
 #define kColorGray       RGBOF(0xF0E0F0)
 #define kColorRed        RGBOF(0xF4515E)
 #define kColorLightGray  RGBOF(0xF3F3F3)
+#define kColorBlack60    RGBOF(0x606060)
 #define kColorWhite      [UIColor whiteColor]
 #define kColorBlack      [UIColor blackColor]
 
@@ -36,7 +37,9 @@ alpha:1.0]
 #define kAppMiddleTextFont      [UIFont systemFontOfSize:15]
 #define kAppSmallTextFont       [UIFont systemFontOfSize:13]
 
-
+/******************** icon ********************************/
+#define kDefaultUserIcon            [UIImage imageNamed:@"default_head"]
+#define kDefaultCoverIcon           [UIImage imageNamed:@"default_cover"]
 
 /******************** role string **********************/
 #define kSxbRole_HostHD     @"HD"
@@ -47,5 +50,7 @@ alpha:1.0]
 #define kLoginParam         @"kLoginParam"
 #define kLoginIdentifier    @"kLoginIdentifier"
 #define kLoginPassward      @"kLoginPassward"
+#define kEnvParam           @"kEnvParam"
+#define kLogLevel           @"kLogLevel"
 
 #endif /* ConstHeader_h */

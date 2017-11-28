@@ -10,8 +10,7 @@
 #define RequestHeader_h
 
 #import "RegistRequest.h"
-
 #import "LoginRequest.h"
-
+#import "RoomListRequest.h"
 
 #endif /* RequestHeader_h */
