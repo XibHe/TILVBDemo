@@ -24,6 +24,8 @@
 		3B2FB6961FCD5D4400DC5A51 /* UIView+CustomAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB6901FCD5D4400DC5A51 /* UIView+CustomAutoLayout.m */; };
 		3B2FB6971FCD5D4400DC5A51 /* UIView+ShakeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB6921FCD5D4400DC5A51 /* UIView+ShakeAnimation.m */; };
 		3B2FB69A1FCD601500DC5A51 /* RoomListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2FB6991FCD601500DC5A51 /* RoomListRequest.m */; };
+		3B3D48461FE29E6600ABC462 /* TCShowLiveListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D48451FE29E6600ABC462 /* TCShowLiveListItem.m */; };
+		3B3D48491FE29E8A00ABC462 /* ShowRoomInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3D48481FE29E8A00ABC462 /* ShowRoomInfo.m */; };
 		3BCEA24F1FCBE08F00D0D8EB /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24E1FCBE08800D0D8EB /* VideoToolbox.framework */; };
 		3BCEA2501FCBE09200D0D8EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24D1FCBE07E00D0D8EB /* UIKit.framework */; };
 		3BCEA2511FCBE09400D0D8EB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCEA24C1FCBE07800D0D8EB /* SystemConfiguration.framework */; };
@@ -138,6 +140,10 @@
 		3B2FB6921FCD5D4400DC5A51 /* UIView+ShakeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ShakeAnimation.m"; sourceTree = "<group>"; };
 		3B2FB6981FCD601500DC5A51 /* RoomListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomListRequest.h; sourceTree = "<group>"; };
 		3B2FB6991FCD601500DC5A51 /* RoomListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomListRequest.m; sourceTree = "<group>"; };
+		3B3D48441FE29E6600ABC462 /* TCShowLiveListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCShowLiveListItem.h; sourceTree = "<group>"; };
+		3B3D48451FE29E6600ABC462 /* TCShowLiveListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCShowLiveListItem.m; sourceTree = "<group>"; };
+		3B3D48471FE29E8A00ABC462 /* ShowRoomInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowRoomInfo.h; sourceTree = "<group>"; };
+		3B3D48481FE29E8A00ABC462 /* ShowRoomInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowRoomInfo.m; sourceTree = "<group>"; };
 		3BCEA23E1FCBDFDE00D0D8EB /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		3BCEA23F1FCBDFF100D0D8EB /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		3BCEA2401FCBDFFB00D0D8EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -369,6 +375,10 @@
 		3B0E825D1FC80977002EC856 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3B3D48441FE29E6600ABC462 /* TCShowLiveListItem.h */,
+				3B3D48451FE29E6600ABC462 /* TCShowLiveListItem.m */,
+				3B3D48471FE29E8A00ABC462 /* ShowRoomInfo.h */,
+				3B3D48481FE29E8A00ABC462 /* ShowRoomInfo.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -787,6 +797,7 @@
 				3B2FB6941FCD5D4400DC5A51 /* UIImage+Common.m in Sources */,
 				3B0E825A1FC808FD002EC856 /* AppDelegate.m in Sources */,
 				3BCEA2971FCBE34700D0D8EB /* LoginRequest.m in Sources */,
+				3B3D48461FE29E6600ABC462 /* TCShowLiveListItem.m in Sources */,
 				3BCEA2981FCBE34700D0D8EB /* RegistRequest.m in Sources */,
 				3BCEA2931FCBE34700D0D8EB /* BaseRequest.m in Sources */,
 				3BCEA2CC1FCC084000D0D8EB /* LiveMainViewController.m in Sources */,
@@ -802,6 +813,7 @@
 				3BCEA2941FCBE34700D0D8EB /* JSONKit.m in Sources */,
 				3BCEA2961FCBE34700D0D8EB /* NSObject+Json.m in Sources */,
 				3B2FB6961FCD5D4400DC5A51 /* UIView+CustomAutoLayout.m in Sources */,
+				3B3D48491FE29E8A00ABC462 /* ShowRoomInfo.m in Sources */,
 				3BCEA2951FCBE34700D0D8EB /* NSMutableDictionary+Json.m in Sources */,
 				3B0E82611FC80B1F002EC856 /* RegistViewController.m in Sources */,
 			);

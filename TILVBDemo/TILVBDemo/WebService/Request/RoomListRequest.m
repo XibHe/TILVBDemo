@@ -34,10 +34,10 @@
     return [RoomListRspData class];
 }
 
-- (BaseResponseData *)parseResponseData:(NSDictionary *)dataDic
-{
-    return [NSObject parse:[self responseDataClass] dictionary:dataDic itemClass:[TCShowLiveListItem class]];
-}
+//- (BaseResponseData *)parseResponseData:(NSDictionary *)dataDic
+//{
+//    return [NSObject parse:[self responseDataClass] dictionary:dataDic itemClass:[TCShowLiveListItem class]];
+//}
 
 @end
 

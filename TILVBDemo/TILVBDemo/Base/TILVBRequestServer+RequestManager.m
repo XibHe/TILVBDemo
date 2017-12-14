@@ -22,4 +22,18 @@
         }
     }];
 }
+
++ (void)roomListWithParams:(NSDictionary*)params success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failure
+{
+    //[NSString stringWithFormat:@"%@svc=live&cmd=roomlist",host];
+    [self postWithUrl:[NSString stringWithFormat:@"%@svc=live&cmd=roomlist",kILVBHost] params:params success:^(id JSON) {
+        if(success){
+            success(JSON);
+        }
+    } failure:^(NSError *error) {
+        if(failure){
+            failure(error);
+        }
+    }];
+}
 @end

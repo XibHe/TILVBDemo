@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TCShowLiveListItem.h"
 
 @interface LiveListTableViewCell : UITableViewCell
 {
