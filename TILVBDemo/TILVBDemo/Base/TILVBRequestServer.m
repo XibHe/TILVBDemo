@@ -29,13 +29,17 @@
         NSDictionary *bodyObjDic = [responseObject objectForKey:@"data"];
         CLog(@"bodyObjDic = %@",bodyObjDic);
         //NSString *code = [bodyObjDic objectForKey:@"code"];
-        NSInteger  code = [responseObject[@"errorCode"] integerValue];
-        CLog(@"url = %@,code = %ld",url,code);
-        if (code == 0) {
+        NSInteger  errorCode = [responseObject[@"errorCode"] integerValue];
+        
+        CLog(@"url = %@,code = %ld",url,errorCode);
+        if (errorCode == 0) {
             if(success)
                 success ([responseObject objectForKey:@"data"]);
         } else {
-            NSError *error = [NSError errorWithDomain:@"请求错误" code:-1 userInfo:nil];
+            
+            NSString *errorInfo = [responseObject objectForKey:@"errorInfo"];
+            NSDictionary *userInfoDic = @{@"errorInfo": errorInfo};
+            NSError *error = [NSError errorWithDomain:@"请求错误" code:errorCode userInfo:userInfoDic];
             if(failure)
                 failure(error);
         }

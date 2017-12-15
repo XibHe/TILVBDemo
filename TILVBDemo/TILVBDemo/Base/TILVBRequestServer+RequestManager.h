@@ -15,6 +15,14 @@
  */
 + (void)getRegistedWithParams:(NSDictionary*)params success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failure;
 
+/**
+ 登录
+ */
++ (void)iLiveLoginWithParams:(NSDictionary*)params success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failure;
+
+/**
+ 获取直播列表
+ */
 + (void)roomListWithParams:(NSDictionary*)params success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failure;
 
 @end

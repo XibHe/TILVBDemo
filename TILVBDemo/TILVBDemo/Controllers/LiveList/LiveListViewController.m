@@ -76,7 +76,8 @@
         NSDictionary *contentDic = (NSDictionary *)JSON;
         [self loadListSucc:contentDic];
     } failure:^(NSError *error) {
-        
+        NSString *errInfo = error.userInfo[@"errorInfo"];
+        NSLog(@"roomList fail.%@",errInfo);
     } ];
 }
 

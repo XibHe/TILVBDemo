@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "RegistViewController.h"
 #import "LiveMainViewController.h"
+#import "TILVBRequestServer+RequestManager.h"
 
 @interface LoginViewController ()
 @property (nonatomic, strong) UITextField *userNameTF;
@@ -148,11 +149,54 @@
     [SVProgressHUD showWithStatus:@"正在登录"];
     
     __weak typeof(self) ws = self;
-    //请求sig
-    LoginRequest *sigReq = [[LoginRequest alloc] initWithHandler:^(BaseRequest *request) {
-        LoginResponceData *responseData = (LoginResponceData *)request.response.data;
-        [AppDelegate sharedAppDelegate].token = responseData.token;
-        [[ILiveLoginManager getInstance] iLiveLogin:identifier sig:responseData.userSig succ:^{
+//    //请求sig
+//    LoginRequest *sigReq = [[LoginRequest alloc] initWithHandler:^(BaseRequest *request) {
+//        LoginResponceData *responseData = (LoginResponceData *)request.response.data;
+//        [AppDelegate sharedAppDelegate].token = responseData.token;
+//        [[ILiveLoginManager getInstance] iLiveLogin:identifier sig:responseData.userSig succ:^{
+//            [SVProgressHUD dismiss];
+//            CLog(@"tillivesdkshow login succ");
+//            [ws saveLoginParamToLocal:identifier passward:pwd];
+//
+//            UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[LiveMainViewController alloc] init]];
+//            [UIApplication sharedApplication].keyWindow.rootViewController = nav;
+//
+//        } failed:^(NSString *module, int errId, NSString *errMsg) {
+//            [SVProgressHUD dismiss];
+//            if (errId == 8050)//离线被踢,再次登录
+//            {
+//                [ws login:identifier passward:pwd];
+//            }
+//            else
+//            {
+//                NSString *errInfo = [NSString stringWithFormat:@"module=%@,errid=%d,errmsg=%@",module,errId,errMsg];
+//                NSLog(@"login fail.%@",errInfo);
+//                [AlertHelp alertWith:@"登录失败" message:errInfo cancelBtn:@"确定" alertStyle:UIAlertControllerStyleAlert cancelAction:nil];
+//            }
+//        }];
+//    } failHandler:^(BaseRequest *request) {
+//        [SVProgressHUD dismiss];
+//        NSString *errInfo = [NSString stringWithFormat:@"errid=%ld,errmsg=%@",(long)request.response.errorCode, request.response.errorInfo];
+//        NSLog(@"login fail.%@",errInfo);
+//        [AlertHelp alertWith:@"登录失败" message:errInfo cancelBtn:@"确定" alertStyle:UIAlertControllerStyleAlert cancelAction:nil];
+//    }];
+//    sigReq.identifier = identifier;
+//    sigReq.pwd = pwd;
+//    [[WebServiceEngine sharedEngine] asyncRequest:sigReq];
+    
+    NSDictionary *paramDic = @{
+                               @"appid" : @([ShowAppId intValue]),
+                               @"id"  : identifier,
+                               @"pwd" : pwd,
+                               @"appid" : @([[ILiveSDK getInstance] getAppId])
+                               };
+    
+    [TILVBRequestServer iLiveLoginWithParams:paramDic success:^(id JSON) {
+        CLog(@"iLiveLogin JSON = %@",JSON);
+        
+        [AppDelegate sharedAppDelegate].token = JSON[@"token"];
+        
+        [[ILiveLoginManager getInstance] iLiveLogin:identifier sig:JSON[@"userSig"] succ:^{
             [SVProgressHUD dismiss];
             CLog(@"tillivesdkshow login succ");
             [ws saveLoginParamToLocal:identifier passward:pwd];
@@ -173,15 +217,13 @@
                 [AlertHelp alertWith:@"登录失败" message:errInfo cancelBtn:@"确定" alertStyle:UIAlertControllerStyleAlert cancelAction:nil];
             }
         }];
-    } failHandler:^(BaseRequest *request) {
+        
+    } failure:^(NSError *error) {
         [SVProgressHUD dismiss];
-        NSString *errInfo = [NSString stringWithFormat:@"errid=%ld,errmsg=%@",(long)request.response.errorCode, request.response.errorInfo];
+        NSString *errInfo = error.userInfo[@"errorInfo"];
         NSLog(@"login fail.%@",errInfo);
         [AlertHelp alertWith:@"登录失败" message:errInfo cancelBtn:@"确定" alertStyle:UIAlertControllerStyleAlert cancelAction:nil];
     }];
-    sigReq.identifier = identifier;
-    sigReq.pwd = pwd;
-    [[WebServiceEngine sharedEngine] asyncRequest:sigReq];
 }
 
 - (NSDictionary *)getLocalLoginParam

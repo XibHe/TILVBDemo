@@ -10,6 +10,9 @@
 
 @implementation TILVBRequestServer (RequestManager)
 
+/**
+ 注册接口
+ */
 +(void)getRegistedWithParams:(NSDictionary*)params success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failure
 {
     [self postWithUrl:[NSString stringWithFormat:@"%@",kILVBHost] params:params success:^(id JSON) {
@@ -23,6 +26,24 @@
     }];
 }
 
+/**
+ 登录
+ */
++ (void)iLiveLoginWithParams:(NSDictionary*)params success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failure
+{
+    [self postWithUrl:[NSString stringWithFormat:@"%@svc=account&cmd=login",kILVBHost] params:params success:^(id JSON) {
+        if(success){
+            success(JSON);
+        }
+    } failure:^(NSError *error) {
+        if(failure){
+            failure(error);
+        }
+    }];
+}
+/**
+ 获取直播列表
+ */
 + (void)roomListWithParams:(NSDictionary*)params success:(HttpSuccessBlock)success failure:(HttpFailureBlock)failure
 {
     //[NSString stringWithFormat:@"%@svc=live&cmd=roomlist",host];
